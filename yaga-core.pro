@@ -13,8 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-		window.cpp
+    textarea.cpp \
+    window.cpp
 
-HEADERS  += window.h
+HEADERS  += \
+    textarea.h \
+    window.h
 
-FORMS    += window.ui
+FORMS    +=

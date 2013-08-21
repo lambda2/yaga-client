@@ -1,14 +1,16 @@
 #include "window.h"
-#include "ui_window.h"
 
 Window::Window(QWidget *parent) :
-    QWidget(parent),
-    ui(new Ui::Window)
+	QWidget(parent)
 {
-    ui->setupUi(this);
+	this->initialize();
 }
 
-Window::~Window()
+void    Window::initialize()
 {
-    delete ui;
+	layout = new QGridLayout(this);
+	this->setLayout(layout);
+	   textArea = new TextArea(this);
+	   layout->addWidget(textArea,0,0);
+	   textArea->show();
 }
