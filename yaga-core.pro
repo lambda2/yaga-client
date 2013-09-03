@@ -14,10 +14,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp\
     textarea.cpp \
-    window.cpp
+    window.cpp \
+    yagacore.cpp
 
 HEADERS  += \
     textarea.h \
-    window.h
+    window.h \
+    yagacore.h
 
 FORMS    +=
